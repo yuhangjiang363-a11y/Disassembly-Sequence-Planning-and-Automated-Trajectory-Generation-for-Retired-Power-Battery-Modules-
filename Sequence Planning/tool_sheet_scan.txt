@@ -1,0 +1,10 @@
+file=chaijie(ceshi).xlsx
+1	X+	Tcount=0	Size=6x6
+2	X-	Tcount=0	Size=6x6
+3	Y+	Tcount=0	Size=6x6
+4	Y-	Tcount=0	Size=6x6
+5	Z+	Tcount=0	Size=6x6
+6	Z-	Tcount=0	Size=6x6
+7	Tool Change Time jiang	Tcount=6	Size=4x4
+8	Basic Time	Tcount=0	Size=6x7
+9	tool	Tcount=6	Size=2x6

@@ -1,0 +1,7 @@
+错误使用 fprintf
+Error writing to output stream.
+iostream stream error
+
+
+出错 GenerateMyModel (第 102 行)
+    fprintf('成功读取零件数: %d\n', N);
