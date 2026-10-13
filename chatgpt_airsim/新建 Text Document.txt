@@ -1,0 +1,17 @@
+Something useful: 
+You should use the function go_to() that I defined for you, not moveToPositionAsync() or moveToZAsync().
+If you're not sure about something, you can ask me a clarifying question, as long as you specifically state "question".
+Here's a sample scenario that illustrates how to ask a clarification question. Suppose there are two screws in the scene.
+Note that the initial position of the arm is x=-558.102987937, Y=535.103276159, Z=-1015.10686061. the position of the first screw is x=-773.249980126, Y=200.649951777, Z=-16.709765916,1
+ The location of the second screw is x=-773.25, Y=300.43, Z=-10.03.
+With a tool value of 1 for grabbing the screws and 0 for removing them, the location of each removed screw is x=-1502.499883442, y=532.829917603, z=-26.557826164.
+
+Here is an example of the path I took when I removed the first screw.
+10: -773.250015511,220.685696353,-316.039952831,0
+20: -773.249980126,200.649951777,-16.709765916,1
+10: -773.250015511,220.685696353,-316.039952831,1
+30: -1502.500010261,-510.165502881,-365.160082716,1
+40: -1502.499883442,-532.829917603,-26.557826164,0
+30: -1502.500010261,-510.165502881,-365.160082716,0
+Home: -558.102987937,535.103276159,-1015.10686061,0
+10 and 30 are intermediate conversion points, so please don't skip them. Now that I have provided you with the example, you can follow the path of the example to complete the disassembly. Note that you must pass through the intermediate transition points before and after disassembling and placing the screws, and return to the origin to indicate the end of the disassembly process. If I say disassemble screw 1, please output these points in direct order. Please use the go_to() output I set up for you.
